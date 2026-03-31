@@ -1,0 +1,87 @@
+.header {
+  background-color: rgb(25, 44, 87);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 50px;
+  border-bottom: 1px solid white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 100;
+  padding: 0 20px;
+}
+
+/* left side */
+.contacts {
+  color: white;
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+.mail-link {
+  color: white;
+  text-decoration: none;
+}
+
+.mail-link:hover {
+  text-decoration: underline;
+}
+
+/* right side */
+.right-side {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+/* icon buttons */
+.notification-button,
+.comment-button {
+  background-color: rgb(195, 223, 251);
+  border: none;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.notification-button:hover,
+.comment-button:hover {
+  background-color: green;
+}
+
+.notification-icon,
+.comment-icon {
+  height: 18px;
+}
+
+/* logo */
+.hd-logo {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: opacity 0.15s;
+}
+
+.hd-logo:hover {
+  opacity: 0.6;
+}
+
+/* mobile responsiveness */
+@media (max-width: 768px) {
+  .contacts {
+    font-size: 12px;
+  }
+
+  .contacts a {
+    display: none;
+    /* hide email on small screens */
+  }
+}
